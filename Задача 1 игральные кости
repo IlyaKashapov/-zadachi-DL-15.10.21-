@@ -1,0 +1,15 @@
+#include <iostream>
+ #include <ctime>
+using namespace std;
+void ASD() {
+    
+    srand(time(NULL));
+    cout << 1 + rand() % 6 << endl;
+    cout << 1 + rand() % 6 << endl;
+    
+}
+int main()
+{
+   ASD();
+    return 0;
+}
