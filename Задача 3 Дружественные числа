@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int del(int num)
+{
+int sumDel = 0;
+for (int n = 1; n <= (num / 2); n++)
+{
+  if (num % n == 0)
+  {
+  sumDel += n;
+  }
+  }
+return sumDel;
+}
+int main()
+{
+for (int n = 2; n <= 10000; n++)
+ {
+ if (n == del(del(n)))
+ {
+ cout << n << " " << del(n) << endl;
+ }
+ }
+return 0;
+}
